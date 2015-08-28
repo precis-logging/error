@@ -1,0 +1,24 @@
+{
+  "name": "precis-error",
+  "version": "0.0.1",
+  "description": "Error endpoint monitor for Precis UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:precis-logging/error.git"
+  },
+  "keywords": [
+    "Precis",
+    "error",
+    "Endpoint"
+  ],
+  "author": "Jeremy Darling <jeremy.darling@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/precis-logging/error/issues"
+  },
+  "homepage": "https://github.com/precis-logging/error"
+}
