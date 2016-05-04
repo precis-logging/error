@@ -69,7 +69,7 @@ var ErrorTransactionStats = React.createClass({
     var segs = Object.keys(blocks).map((key)=>blocks[key]);
 
     var grouped = this.state.stats.reduce((accum, item)=>{
-      var time = new Date(item.time).getTime();
+      var time = new Date(item.time||item.dateTime).getTime();
       segs.forEach(function(segment){
         if(time>=segment.window){
           segment.error = segment.error+item.stats.error;
@@ -138,7 +138,7 @@ var ErrorTransactionsTable = React.createClass({
           <td><Link to={"/error/inspect/"+record._id}>{record.pid}</Link></td>
           <td style={errorStyle}><Link to={"/error/inspect/"+record._id} style={errorStyle}>{record.level}</Link></td>
           <td><Link to={"/error/inspect/"+record._id}>{details}</Link></td>
-          <td><Link to={"/error/inspect/"+record._id}>{new Date(record.time).toLocaleString()}</Link></td>
+          <td><Link to={"/error/inspect/"+record._id}>{new Date(record.time||record.dateTime).toLocaleString()}</Link></td>
         </tr>
       );
     });
