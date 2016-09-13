@@ -1,6 +1,6 @@
 {
   "name": "precis-error",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Error endpoint monitor for Precis UI.",
   "main": "index.js",
   "scripts": {
